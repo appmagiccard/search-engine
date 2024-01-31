@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -32,6 +33,11 @@ public class SearchEngine implements ISearchEngine{
         String term1 = q+"%";
         String term2 = "% "+q+"%";
         return repository.getCardNamesByProximity(term1, term2, limit);
+    }
+
+    @Override
+    public List<CardPojo> advancedSearch(Map<String, String> params) {
+        return null;
     }
 
     @Override
@@ -73,4 +79,6 @@ public class SearchEngine implements ISearchEngine{
     public List<CardPojo> searchCardsBySetsId(Long id) {
         return null;
     }
+
+
 }

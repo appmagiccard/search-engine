@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/search")
@@ -42,7 +44,8 @@ public class SearchEngineController {
         log.info("!--- Params for advance search ---!");
         log.info("[name {}] - [colors {}] - [set {}]", name, colors, set);
         log.info("!--- Aca faltan parametros... hay que pensarlos ---!");
-        return ResponseEntity.status(200).build();
+        Map<String, String> params = new HashMap<>();
+        return ResponseEntity.ok(engine.advancedSearch(params));
     }
 
     @GetMapping("/byCardId/{id}")

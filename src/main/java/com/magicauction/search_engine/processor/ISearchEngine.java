@@ -4,6 +4,7 @@ import com.magicauction.search_engine.entity.CardPojo;
 import com.magicauction.search_engine.entity.ScryfallSetPojo;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 public interface ISearchEngine {
@@ -25,4 +26,6 @@ public interface ISearchEngine {
     List<CardPojo> searchCardsBySetsName(String name);
 
     List<CardPojo> searchCardsBySetsId(Long id);
+
+    List<CardPojo> advancedSearch(Map<String, String> params);
 }
