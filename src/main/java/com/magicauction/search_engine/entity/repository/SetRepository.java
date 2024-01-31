@@ -1,7 +1,7 @@
-package com.magicauction.searchengine.entity.repository;
+package com.magicauction.search_engine.entity.repository;
 
 
-import com.magicauction.searchengine.entity.MagicSet;
+import com.magicauction.search_engine.entity.MagicSet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.magicauction.searchengine.entity.repository;
+package com.magicauction.search_engine.entity.repository;
 
 
-import com.magicauction.searchengine.entity.Card;
+import com.magicauction.search_engine.entity.Card;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

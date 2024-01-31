@@ -1,4 +1,4 @@
-package com.magicauction.searchengine;
+package com.magicauction.search_engine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

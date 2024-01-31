@@ -1,4 +1,4 @@
-package com.magicauction.searchengine.entity;
+package com.magicauction.search_engine.entity;
 
 import jakarta.persistence.*;
 
